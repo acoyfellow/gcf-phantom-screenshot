@@ -1,0 +1,17 @@
+{
+  "name": "calc-pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gcloud config set project **PROJECTNAME** && gcloud beta functions deploy calc-pdf --entry-point handler --trigger-http --stage-bucket **BUCEKT**.appspot.com --memory=256MB"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "ejs": "^2.5.7",
+    "fs": "0.0.1-security",
+    "phantom-html-to-pdf": "^0.5.4"
+  }
+}
